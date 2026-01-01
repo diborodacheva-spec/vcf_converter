@@ -1,0 +1,5 @@
+{
+  "name": "Конвертер Genotek в GEDmatch: преобразование VCF в TXT (бесплатно)",
+  "description": "Бесплатный онлайн-инструмент для конвертации сырых данных ДНК Genotek (VCF) в формат TXT, совместимый с GEDmatch, MyHeritage и FTDNA. Решение проблемы ошибки загрузки данных Генотек.",
+  "requestFramePermissions": []
+}
