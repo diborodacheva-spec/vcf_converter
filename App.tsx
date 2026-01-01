@@ -1,5 +1,5 @@
 
-import React, { useState, useCallback, useRef, useEffect, useLayoutEffect } from 'react';
+import React, { useState, useRef, useLayoutEffect } from 'react';
 import { GoogleGenAI } from "@google/genai";
 import { processVcf } from './vcfProcessor';
 import { ProcessingStatus, ConversionStats } from './types';
@@ -240,7 +240,7 @@ export default function App() {
     setShowAiHelp(true);
     setAiResponse('...');
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
       const currentLangName = translations[lang].lang_name;
       const prompt = `The user is using a Genotek to GEDmatch DNA converter.
       The current UI language is ${currentLangName}.
